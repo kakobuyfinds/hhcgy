@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#211a37">
+<title>BBDBuy spreadsheet | Guia de produtos, tamanhos e QC</title>
+<meta name="description" content="Explore a BBDBuy spreadsheet por categoria. Aprenda a conferir links, comparar tamanhos em centímetros, ler fotos de QC e estimar o custo do envio.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BBDBuy spreadsheet | Guia de produtos, tamanhos e QC">
+<meta property="og:description" content="Um guia em português para encontrar referências, verificar produtos e comparar o custo de uma encomenda.">
+<meta property="og:image" content="https://www.tike.gr/files/images/products/media/CW2/CW2288-111/images/CW2288-111.jpg.webp">
+<meta property="og:image:alt" content="Ténis Nike Air Force 1 ’07 branco visto de lado">
+<!-- Pesquisa editorial: 10 sites relacionados consultados. A primeira página do Google não pôde ser confirmada. -->
+<style>
+:root {
+  color-scheme: light;
+  --ink: #211a37;
+  --muted: #554965;
+  --paper: #f8f5ff;
+  --line: #d9cfe8;
+  --accent: #dfff81;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 1rem/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+a { color: inherit; text-underline-offset: .2em; }
+a:focus-visible, summary:focus-visible { outline: 3px solid #6846af; outline-offset: 3px; }
+img { display: block; max-width: 100%; }
+h1, h2, h3, p, figure { margin: 0; }
+h1, h2, h3 { line-height: 1.12; }
+h2 { font-size: clamp(1.55rem, 4vw, 2.4rem); letter-spacing: -.035em; }
+h3 { font-size: 1.22rem; }
+.wrap { width: min(100% - 2rem, 70rem); margin-inline: auto; }
+.bar, footer { background: var(--ink); color: #fff; }
+.bar .wrap, footer .wrap { padding-block: .95rem; }
+.bar a { font-weight: 750; }
+.hero { display: grid; grid-template-columns: 1.25fr 1fr; gap: clamp(1rem, 4vw, 3rem); align-items: center; padding-block: clamp(1.75rem, 5vw, 3.5rem) 1.5rem; }
+.eyebrow { font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+h1 { margin-block: .5rem .75rem; font-size: clamp(2.35rem, 6.6vw, 5.3rem); letter-spacing: -.065em; }
+.lead { max-width: 58ch; color: var(--muted); }
+.button { display: inline-block; margin-top: 1rem; padding: .65rem .95rem; border: 1px solid var(--ink); border-radius: .35rem; background: var(--accent); font-weight: 750; }
+.hero figure { overflow: hidden; border-radius: .7rem; background: #eee7fb; }
+.hero img { width: 100%; height: clamp(10rem, 27vw, 19rem); object-fit: contain; mix-blend-mode: multiply; }
+figcaption { padding: .65rem .85rem; font-size: .86rem; }
+.hero figcaption { border-top: 1px solid var(--line); }
+.panel { padding: clamp(1rem, 3vw, 1.6rem); border: 1px solid var(--line); border-radius: .7rem; background: #fff; }
+.panel > p, .section-intro { margin-top: .5rem; color: var(--muted); }
+.categories, .gallery, .articles { display: grid; gap: .65rem; margin: 1rem 0 0; }
+.categories { grid-template-columns: repeat(5, minmax(0, 1fr)); list-style: none; padding: 0; }
+.categories a { display: flex; align-items: center; min-height: 3.15rem; height: 100%; padding: .55rem .7rem; border: 1px solid var(--line); border-radius: .4rem; background: var(--paper); font-weight: 670; overflow-wrap: anywhere; }
+.categories a:hover, .button:hover { background: #eee7fb; }
+section { margin-bottom: clamp(1.5rem, 4vw, 2.7rem); }
+.gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.gallery figure { overflow: hidden; border: 1px solid var(--line); border-radius: .55rem; background: #fff; }
+.gallery img { width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; background: #fff; }
+.articles { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.articles h3 { margin-top: .45rem; }
+.articles p + p, .articles h3 + p { margin-top: .65rem; }
+.articles .eyebrow { color: #5b3c88; }
+details { padding: .65rem 0; border-bottom: 1px solid var(--line); }
+details:first-of-type { margin-top: .7rem; }
+details:last-of-type { border-bottom: 0; }
+summary { padding-block: .2rem; cursor: pointer; font-weight: 720; }
+details p { margin: .4rem 0 .1rem; max-width: 74ch; }
+footer p { margin-bottom: .4rem; }
+@media (max-width: 48rem) {
+  .categories { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .articles { grid-template-columns: 1fr; }
+}
+@media (max-width: 35rem) {
+  .hero { grid-template-columns: 1fr; }
+  .hero img { height: 9rem; }
+  .categories { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "BBDBuy spreadsheet | Guia de produtos, tamanhos e QC",
+  "description": "Explore a BBDBuy spreadsheet por categoria. Aprenda a conferir links, comparar tamanhos em centímetros, ler fotos de QC e estimar o custo do envio.",
+  "inLanguage": "pt",
+  "about": {
+    "@type": "Thing",
+    "name": "BBDBuy spreadsheet"
+  }
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/hhcgy/">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap"><a href="https://www.hipobuyfind.com">www.hipobuyfind.com</a></div>
+</header>
+<main class="wrap">
+  <div class="hero">
+    <div>
+      <p class="eyebrow">Guia de pesquisa e compra</p>
+      <h1>BBDBuy spreadsheet</h1>
+      <p class="lead">Uma folha de cálculo de produtos, também chamada planilha, reúne links e referências para comparar artigos. Comece pela categoria, confirme a variante e compare o custo total antes de encomendar. Os links deste guia levam à HipobuyFind.</p>
+      <a class="button" href="https://www.hipobuyfind.com">Explorar a HipobuyFind</a>
+    </div>
+    <figure>
+      <img src="https://www.tike.gr/files/images/products/media/CW2/CW2288-111/images/CW2288-111.jpg.webp" width="640" height="640" alt="Ténis Nike Air Force 1 ’07 branco visto de lado" loading="eager" fetchpriority="high">
+      <figcaption>Nike Air Force 1 ’07 · Referência visual</figcaption>
+    </figure>
+  </div>
+
+  <section class="panel" aria-labelledby="categorias">
+    <h2 id="categorias">Categorias de produtos</h2>
+    <p>Abra uma categoria na HipobuyFind para comparar os artigos listados.</p>
+    <ul class="categories">
+      <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Calçado</a></li>
+      <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Camisolas com e sem capuz</a></li>
+      <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirts</a></li>
+      <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Casacos</a></li>
+      <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Calças e calções</a></li>
+      <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Bonés e chapéus</a></li>
+      <li><a href="https://hipobuyfind.com/category-917-Sets.html">Conjuntos</a></li>
+      <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Roupa interior</a></li>
+      <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Camisolas desportivas</a></li>
+      <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Acessórios</a></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="referencias">
+    <h2 id="referencias">Referências de estilo</h2>
+    <p class="section-intro">Imagens ilustrativas para comparar materiais, formas e acabamentos. A disponibilidade de cada artigo deve ser verificada no anúncio.</p>
+    <div class="gallery">
+      <figure>
+        <img src="https://assets.christiandior.com/is/image/diorprod/683M620A7040C585_E01-1?%24default_GH%24=&amp;crop=463%2C162%2C1051%2C1752&amp;extend=0%2C0%2C0%2C250&amp;hei=2000&amp;scale=0.875&amp;wid=1850" width="400" height="400" alt="Camisola Dior Oblique em jacquard azul" loading="lazy" decoding="async">
+        <figcaption>Dior Oblique · Camisola em jacquard</figcaption>
+      </figure>
+      <figure>
+        <img src="https://fr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-casquette-monogram-essential--M5381M_PM2_Front%20view.jpg" width="400" height="400" alt="Boné preto Louis Vuitton Monogram Essential" loading="lazy" decoding="async">
+        <figcaption>Louis Vuitton · Boné Monogram Essential</figcaption>
+      </figure>
+      <figure>
+        <img src="https://brandol.jp/upload/save_image/gu-200035-kqwbg-9791-l_1.jpg" width="400" height="400" alt="Boné Gucci GG em lona com padrão bege" loading="lazy" decoding="async">
+        <figcaption>Gucci · Boné em lona GG</figcaption>
+      </figure>
+      <figure>
+        <img src="https://theclosetonlineshop.com/cdn/shop/products/hermes_clic_h_golden-orange_tc4740_3_550x.jpg?v=1664870292" width="400" height="400" alt="Pulseira Hermès Clic H em esmalte laranja com fecho dourado" loading="lazy" decoding="async">
+        <figcaption>Hermès · Pulseira Clic H</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="guias">
+    <h2 id="guias">Guias de compra</h2>
+    <div class="articles">
+      <article class="panel">
+        <p class="eyebrow">01 · Pesquisa de produtos</p>
+        <h3>Como verificar links de produtos BBDBuy</h3>
+        <p>Use a pesquisa por imagem ou pela referência do modelo para encontrar candidatos. No anúncio, confira o código do produto, a cor, o tamanho e a variante selecionada. A foto principal pode mostrar um artigo diferente daquele que está selecionado no menu de variantes.</p>
+        <p>Ao comparar anúncios do Taobao, do Weidian ou do 1688, registe o link do vendedor, a variante e a data da consulta. Se um link antigo deixar de abrir, volte a procurar pela referência do modelo e confira os detalhes na nova ficha.</p>
+      </article>
+      <article class="panel">
+        <p class="eyebrow">02 · Tamanho e acabamento</p>
+        <h3>Como ler fotos de QC e a tabela de tamanhos</h3>
+        <p>Para calçado, compare o comprimento da palmilha em centímetros com o de um par que já usa. Para roupa, meça a largura do peito, o comprimento da peça e o da manga numa superfície plana. Confira se a tabela indica a largura da peça ou o contorno do corpo.</p>
+        <p>Nas fotos de controlo de qualidade (QC), observe o perfil da sola, o alinhamento das costuras, a etiqueta e o fecho. Peça uma foto com régua se a medida estiver ilegível. Para uma pulseira, compare a circunferência interna com a medida do pulso e confira o fecho de perto.</p>
+      </article>
+      <article class="panel">
+        <p class="eyebrow">03 · Envio internacional</p>
+        <h3>Como calcular o custo total de uma encomenda</h3>
+        <p>Some o preço do artigo, o envio até ao armazém, as taxas de serviço e o transporte internacional. Se comparar em euros ou reais, converta as duas cotações com a taxa de câmbio da mesma data. Reserve uma linha para eventuais impostos no destino. Confirme também as condições de devolução antes de pagar.</p>
+        <p>Para comparar duas opções de transporte, peça o peso real e as dimensões da caixa. Verifique como cada transportadora calcula o peso volumétrico e se a cotação inclui seguimento da encomenda. A caixa de um par de ténis pode mudar o custo mesmo quando o peso do produto é o mesmo.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="faq" itemscope itemtype="https://schema.org/FAQPage">
+    <h2 id="faq">Perguntas frequentes</h2>
+    <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+      <summary itemprop="name">O que é uma BBDBuy spreadsheet?</summary>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">É um catálogo de referência que organiza links e informações sobre produtos para facilitar a pesquisa e a comparação. Confirme os dados de cada artigo no anúncio antes de comprar.</p>
+      </div>
+    </details>
+    <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+      <summary itemprop="name">Posso confirmar a autenticidade pelas fotos de QC?</summary>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">Não. As fotos de QC ajudam a verificar a variante, as medidas e os defeitos visíveis. Para verificar a autenticidade, confirme a procedência e a documentação da compra.</p>
+      </div>
+    </details>
+    <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+      <summary itemprop="name">Como comparo um tamanho europeu com o do anúncio?</summary>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">Compare as medidas em centímetros com as de um artigo que lhe serve. Para calçado, confira o comprimento da palmilha. Para roupa, verifique se o vendedor mede o corpo ou a peça.</p>
+      </div>
+    </details>
+    <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+      <summary itemprop="name">O preço do artigo inclui o envio internacional?</summary>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">Depende da oferta. Veja o que está incluído e confirme a cotação de envio para o seu destino com o peso e as dimensões do pacote.</p>
+      </div>
+    </details>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p>Guia editorial independente. As marcas ilustram modelos e estilos.</p>
+    <a href="https://www.hipobuyfind.com">www.hipobuyfind.com</a>
+  </div>
+</footer>
+</body>
+</html>
